@@ -1,7 +1,7 @@
 
 import React, { memo } from 'react';
 import { Handle, Position } from 'reactflow';
-import { Bot, Tool, Zap } from 'lucide-react';
+import { Bot, Package, Zap } from 'lucide-react';
 
 interface NodeData {
   label: string;
@@ -31,7 +31,7 @@ export const ToolNode = memo(({ data }: { data: NodeData }) => {
     <div className="px-4 py-2 rounded-md border-2 border-purple-300 bg-purple-50 shadow-sm w-48">
       <Handle type="target" position={Position.Top} />
       <div className="flex items-center gap-2">
-        <Tool className="h-5 w-5 text-purple-500" />
+        <Package className="h-5 w-5 text-purple-500" />
         <div>
           <div className="font-semibold text-sm">{data.label}</div>
           {data.description && (
