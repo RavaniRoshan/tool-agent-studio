@@ -15,6 +15,8 @@ import NotFound from "./pages/NotFound";
 import DashboardLayout from "./components/layout/DashboardLayout";
 import DashboardHome from "./pages/dashboard/DashboardHome";
 import AgentsPage from "./pages/dashboard/AgentsPage";
+import WorkflowsPage from "./pages/dashboard/WorkflowsPage";
+import WorkflowBuilder from "./pages/dashboard/WorkflowBuilder";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +36,9 @@ const App = () => (
           <Route path="/dashboard" element={<DashboardLayout />}>
             <Route index element={<DashboardHome />} />
             <Route path="agents" element={<AgentsPage />} />
+            <Route path="workflows" element={<WorkflowsPage />} />
+            <Route path="workflows/create" element={<WorkflowBuilder />} />
+            <Route path="workflows/:id" element={<WorkflowBuilder />} />
             {/* Add more dashboard routes as needed */}
           </Route>
           

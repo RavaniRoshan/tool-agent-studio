@@ -21,14 +21,14 @@ import {
   Plus,
   LogOut,
 } from 'lucide-react';
-import Logo from '@/components/Logo';
+import Logo from '@/components/ui/Logo';
 import { Button } from '@/components/ui/button';
 
 const DashboardSidebar = () => {
   const location = useLocation();
   
   const isActive = (path: string) => {
-    return location.pathname === path;
+    return location.pathname === path || location.pathname.startsWith(path + '/');
   };
   
   const menuItems = [
@@ -43,14 +43,14 @@ const DashboardSidebar = () => {
       path: '/dashboard/agents' 
     },
     { 
-      icon: Package, 
-      name: 'Tools', 
-      path: '/dashboard/tools' 
-    },
-    { 
       icon: Workflow, 
       name: 'Workflows', 
       path: '/dashboard/workflows' 
+    },
+    { 
+      icon: Package, 
+      name: 'Tools', 
+      path: '/dashboard/tools' 
     },
     { 
       icon: BarChart, 
