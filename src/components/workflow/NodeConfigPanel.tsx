@@ -56,11 +56,7 @@ const NodeConfigPanel: React.FC<NodeConfigPanelProps> = ({ selectedNode }) => {
               <TabsTrigger value="security" className="flex-1">Security</TabsTrigger>
             )}
           </TabsList>
-        </Tabs>
-      </div>
-      
-      <ScrollArea className="flex-1">
-        <div className="p-4 space-y-6">
+          
           <TabsContent value="general" className="space-y-6 mt-0">
             <div className="space-y-2">
               <Label htmlFor="node-name">Name</Label>
@@ -109,6 +105,13 @@ const NodeConfigPanel: React.FC<NodeConfigPanelProps> = ({ selectedNode }) => {
               <AgentSecurityConfig />
             )}
           </TabsContent>
+        </Tabs>
+      </div>
+      
+      <ScrollArea className="flex-1">
+        <div className="p-4 space-y-6">
+          {/* We need to remove the TabsContent components here that are outside of Tabs */}
+          {/* The TabsContent components are now correctly placed inside the Tabs component above */}
         </div>
       </ScrollArea>
       
