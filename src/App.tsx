@@ -17,6 +17,7 @@ import DashboardHome from "./pages/dashboard/DashboardHome";
 import AgentsPage from "./pages/dashboard/AgentsPage";
 import WorkflowsPage from "./pages/dashboard/WorkflowsPage";
 import WorkflowBuilder from "./pages/dashboard/WorkflowBuilder";
+import ToolsPage from "./pages/dashboard/ToolsPage";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,7 @@ const App = () => (
             <Route path="workflows" element={<WorkflowsPage />} />
             <Route path="workflows/create" element={<WorkflowBuilder />} />
             <Route path="workflows/:id" element={<WorkflowBuilder />} />
+            <Route path="tools" element={<ToolsPage />} />
             {/* Add more dashboard routes as needed */}
           </Route>
           
