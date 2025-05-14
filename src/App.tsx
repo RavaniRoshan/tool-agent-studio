@@ -18,6 +18,7 @@ import AgentsPage from "./pages/dashboard/AgentsPage";
 import WorkflowsPage from "./pages/dashboard/WorkflowsPage";
 import WorkflowBuilder from "./pages/dashboard/WorkflowBuilder";
 import ToolsPage from "./pages/dashboard/ToolsPage";
+import CollaborationPage from "./pages/dashboard/CollaborationPage";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="workflows/create" element={<WorkflowBuilder />} />
             <Route path="workflows/:id" element={<WorkflowBuilder />} />
             <Route path="tools" element={<ToolsPage />} />
+            <Route path="collaboration" element={<CollaborationPage />} />
             {/* Add more dashboard routes as needed */}
           </Route>
           

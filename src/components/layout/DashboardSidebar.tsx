@@ -20,6 +20,7 @@ import {
   Settings,
   Plus,
   LogOut,
+  GitFork,
 } from 'lucide-react';
 import Logo from '@/components/Logo';
 import { Button } from '@/components/ui/button';
@@ -51,6 +52,11 @@ const DashboardSidebar = () => {
       icon: Package, 
       name: 'Tools', 
       path: '/dashboard/tools' 
+    },
+    { 
+      icon: GitFork, 
+      name: 'Collaboration', 
+      path: '/dashboard/collaboration' 
     },
     { 
       icon: BarChart, 
