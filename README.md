@@ -1,73 +1,49 @@
-# Welcome to your Lovable project
+# CrewHub
 
-## Project info
+CrewHub is a collaborative platform for AI agent orchestration and workflow management. It empowers teams to assemble, configure, and manage specialized AI agents and tools to tackle complex projects efficiently—all in one place.
 
-**URL**: https://lovable.dev/projects/091f7152-e1cb-4110-b9cc-b1a4edf612fe
+## What is CrewHub?
+CrewHub transforms how teams work with AI by providing a unified environment for building, managing, and scaling AI-powered workflows. Whether you're a developer, data scientist, or project manager, CrewHub enables seamless collaboration and orchestration of AI agents, tools, and human contributors.
 
-## How can I edit this code?
+## Key Features
 
-There are several ways of editing your application.
+- **AI Agent Management**: Integrate and manage major AI models with detailed configuration options and performance metrics.
+- **Tool Integration**: Access a comprehensive catalog of tools and connect them to your AI workflows with ease.
+- **Visual Workflow Builder**: Create complex AI workflows with an intuitive drag-and-drop interface and conditional logic.
+- **Team Collaboration**: Work together in real-time with version control, commenting, and shared workspaces.
+- **Advanced Analytics**: Track performance, costs, and usage statistics across your AI models and workflows.
+- **Developer API**: Integrate CrewHub with your existing systems through a comprehensive API.
 
-**Use Lovable**
+## How CrewHub Works
+1. **Create Your Workspace**: Set up projects, invite team members, and configure your workspace settings.
+2. **Build Your AI Crew**: Select and configure AI agents and tools from our extensive catalog.
+3. **Design Workflows**: Create visual workflows connecting agents and tools to solve complex problems.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/091f7152-e1cb-4110-b9cc-b1a4edf612fe) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
+## Technologies Used
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Getting Started
 
-Simply open [Lovable](https://lovable.dev/projects/091f7152-e1cb-4110-b9cc-b1a4edf612fe) and click on Share -> Publish.
+1. **Clone the repository:**
+   ```sh
+   git clone <YOUR_GIT_URL>
+   cd crewhub
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
 
-## Can I connect a custom domain to my Lovable project?
+## Contributing
+We welcome contributions! Please open issues or submit pull requests for improvements and new features.
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+This project is licensed under the MIT License.
